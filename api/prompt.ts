@@ -1,7 +1,7 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node"
 import { ChatGPTAPIBrowser } from "chatgpt"
 
-module.exports = async (req: VercelRequest, res: VercelResponse) => {
+export default async (req: VercelRequest, res: VercelResponse) => {
     if (req.method === "POST") {
         const { job, company, description, resume, tone, additionalInformation } = req.body
         const prompt = `
@@ -36,6 +36,7 @@ module.exports = async (req: VercelRequest, res: VercelResponse) => {
         ${additionalInformation}
         """
         `
+        
         const api = new ChatGPTAPIBrowser({
             email: "liberintwari+1@gmail.com",
             password: "MKSrAFMpgZt9P2z",

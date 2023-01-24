@@ -1,12 +1,19 @@
 {
   "name": "clg-function",
   "version": "1.0.0",
-  "type": "module",
   "description": "cover-letter-generetor vercel function",
   "main": "index.js",
   "author": "liberintwari@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "vercel": "vercel"
+  },
   "dependencies": {
-    "@vercel/node": "^2.8.15"
+    "@vercel/node": "^2.8.15",
+    "chatgpt": "^3.5.1",
+    "puppeteer": "^19.6.0"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }

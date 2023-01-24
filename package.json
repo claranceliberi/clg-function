@@ -1,0 +1,11 @@
+{
+  "name": "clg-function",
+  "version": "1.0.0",
+  "description": "cover-letter-generetor vercel function",
+  "main": "index.js",
+  "author": "liberintwari@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/node": "^2.8.15"
+  }
+}
